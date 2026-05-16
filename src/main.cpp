@@ -40,7 +40,7 @@ void button_read() {
         if (bt1.read() == 0) {
             is_button_pressed = true;
             if (limit_sw1.read() == 1) {
-                fp.pwm[1] = -6775;
+                fp.pwm[1] = -7000;
             } else {
                 fp.pwm[1] = 0;
             }
